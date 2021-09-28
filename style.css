@@ -1,0 +1,430 @@
+*{
+    margin: 0;
+	padding: 0;
+	font-family: 'STIX Two Text', serif;
+}
+.header{
+    min-height: 100vh;
+	width: 100%;
+	background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url("banner2.jpg");
+	background-color: #252525;
+	background-position: center;
+	background-size: cover;
+	position: absolute; /*jangan tukar if nak background nampak*/
+}
+.sub-header{
+    min-height: 5%;
+	width: 100%;
+	background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url("banner2.jpg");
+	background-color: #252525;
+	background-position: center;
+	background-size: cover;
+	position: absolute; /*jangan tukar if nak background nampak*/
+}
+nav{
+	display: flex;
+	padding: 2% 6%;
+	justify-content: space-between;
+	align-items: center;
+}
+nav img{
+	width: 150px;
+}
+.nav-links{
+	flex: 1;
+	text-align: right;
+}
+.nav-links ul li{
+	list-style: none;
+	display: inline-block;
+	padding: 8px 12px;
+	position: relative;
+}
+.nav-links ul li a{
+	color:rgb(61, 60, 60); /*home | about | media FONT*/
+	text-decoration: none;
+	font-size: 13px;
+}
+.nav-links ul li::after{
+	content: '';
+	width: 0%;
+	height: 2px;
+	background: rgb(75, 14, 14);
+	display: block;
+	margin: auto;
+	transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%
+}
+.text-box{
+	width: 100%;
+	color: rgb(184, 184, 184);  /*See The World Thru A Good Eye*/
+	position: relative;
+	top: -20%;
+	left: 50%;
+	transform: translate(-50%, 20%);
+	text-align: center;
+}
+.text-box h1{
+	font-size: 45px;
+}
+.text-box p{
+	margin: 10px 0 40px;
+	font-size: 17px;
+	color: rgb(100, 98, 98); /*Let us help you in making your mind a reality*/
+}
+.hero-btn{
+	display: inline-block;
+	text-decoration: none;
+	color: rgb(100, 98, 98); /*see what we offer FONT*/
+	border: 1px solid rgb(160, 157, 157);
+	padding: 12px 34px;
+	font-size: 13px;
+	background: transparent;
+	position: relative;
+	cursor: pointer;
+}
+.hero-btn:hover{
+	border: 1px solid #2c2c2c;
+	background: #3b0e0e; /*see what we offer hovered color*/
+	transition: 1s;
+}
+
+nav .xicons{
+	display: none;
+}
+
+@media(max-width: 700px){
+	.text-box h1{
+		font-size: 19px;
+	}
+	.text-box p{
+		font-size: 12px;
+	}
+	.nav-links ul li{
+		display: block;
+	}
+	.nav-links{
+		position: absolute;
+		background: #1b1919;
+		height: 100vh;
+		width: 200px;
+		top: 0;
+		right: -100px;
+		text-align: left;
+		z-index: 2;
+		transition: 1s;
+	}
+	nav .xicons{
+		display: none; /*from block*/
+		color: #fff;
+		margin: 10px;
+		font-size: 22px;
+		cursor: pointer;
+	}
+	.nav-links ul{
+		padding: 10px;
+	}
+	.header{
+		position: absolute; /*jangan tukar if nak background nampak*/
+	}
+}
+
+/*services*/
+
+.services{
+	width: 75%;
+	margin: auto;
+	text-align: center;
+	padding-top: 48%;
+	
+}
+.services h1{
+	color:rgb(100, 98, 98)
+}
+.services p{
+	color:rgb(100, 98, 98)
+}
+.service-box{
+	width: 80%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	margin: auto;
+}
+.single-service{
+	flex-basis: 31%;  /*change this percent for coloumn*/
+	text-align: center;
+	border-radius: 7px;
+	margin-bottom: 20px;
+	color: #fff;
+	position: relative;
+}
+.single-service img{
+	width: 100%;
+	border-radius: 7px;
+}
+.overlay{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	border-radius: 7px;
+	cursor: pointer;
+	background: linear-gradient(rgba(0,0,0,0.5),#0b1d2b);
+	opacity: 0;
+	transition: 1s;
+}
+.single-service:hover .overlay{
+	opacity: 1;
+}
+.service-desc{
+	width: 80%;
+	position: absolute;
+	bottom: 0%;
+	left: 50%;
+	opacity: 0;
+	transform: translateX(-50%);
+	transition: 1s;
+}
+.hr{
+	background: #fff;
+	height: 3px;
+	border: 0;
+	margin: 50px auto;
+	width: 40%;
+}
+.service-desc h3{
+	color: #fff;
+}
+.service-desc p{
+	color: #fff;
+	font-size: 12px;
+	line-height: 30px;  /*spaceing between line for 'p'*/
+}
+.single-service:hover .service-desc{
+	bottom: 40%;
+	opacity: 1;
+}
+@media(max-width: 700px){
+	.services{
+		margin-top: 70%;
+	}
+	.single-service{
+		flex-basis: 100%;
+		margin-bottom: 9%; /*space between boxes top and bottom*/
+		position: relative;
+		display: grid;
+		margin: 10px auto;
+		height: 50%;
+	}
+	.service-desc p{
+		font-size: 12px;
+	}
+	.hr{
+		margin: 30px auto;
+		height: 50%;
+	}
+}
+
+
+/*-----artworks = our works------*/
+.artworks{
+	width: 100%;
+	margin: auto;
+	text-align: center;
+	padding-top: 50px;
+}
+.artworks h1{
+	color:rgb(100, 98, 98)
+}
+.artworks p{
+	color:rgb(100, 98, 98)
+}
+.row{
+	width: 80%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	margin: auto;
+}
+.artworks-col{
+	flex-basis: 32%;
+	border-radius: 5px;
+	margin-bottom: 30px;
+	position: relative;
+	overflow: hidden;
+}
+.artworks-col img{
+	width: 100%;
+	display: block;
+}
+.layer{
+	background: transparent;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	transition: 0.5s;
+}
+.layer:hover{
+	background: rgba(0, 0, 0, 0.7); /*the color hover for 'our works'*/
+}
+.layer h3{
+	width: 100%;
+	font-weight: 500;
+	color: rgb(219, 219, 219); /*the color Font for 'our works'*/
+	font-size: 20px;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	position: absolute;
+	transition: 0.5s;
+}
+.layer:hover h3{
+	bottom: 49%;
+	opacity: 1;
+}
+@media(max-width: 700px){
+	.row{
+		width: 60%;
+		flex-basis: 70%;
+		position: relative;
+		display: grid; /*grid style means kotak tu jadi grid atas bawah*/
+	}
+	.artworks-col{
+		margin: auto;
+		margin-bottom: 9%;
+	}
+}
+
+/*values*/
+.intro{
+	width: 60%;
+	position: absolute;
+	color: #474747;
+	margin: 20%;
+	margin-bottom: 30px;
+}
+.col{
+	width: 60%;
+	padding: 30px;
+	display: inline;
+	
+}
+.intro img{
+	width: 80%;
+}
+@media(max-width: 700px){
+	.intro img{
+		width: 100%;
+	}
+	.intro{
+		margin-top: 50%;
+	}
+}
+
+
+
+
+/*bottom contact infos*/
+
+.bottomcontacts{
+	background:rgb(22, 22, 22)
+}
+.bottomcontacts h1{
+	width: 100%;
+	color: rgb(77, 77, 77);  
+	position: relative;
+	top: -20%;
+	left: 50%;
+	transform: translate(-50%, 20%);
+	text-align: center;
+	font-size: 12px;
+}
+.bottomcontacts p{
+	color: rgb(13, 71, 71); /*fura.design*/
+	font-size: 14px;
+	top: -20%;
+	left: 50%;
+	text-align: center;
+	word-spacing: 10px;
+}
+.socialmediaicon{
+	color: rgb(110, 110, 110);
+	background: linear-gradient(rgb(58, 30, 30),rgb(42, 102, 79));
+    padding: 8px;
+    border-radius: 50%;
+	border: 1.5px solid #bbbaba;
+}
+.footer{
+	margin-bottom: 0%;
+	background:rgb(22, 22, 22)
+}
+.footer h1{
+	width: 100%;
+	color: rgb(77, 77, 77);  
+	position: relative;
+	bottom: 0%;
+	left: 50%;
+	transform: translate(-50%, 20%);
+	text-align: center;
+	font-size: 12px;
+}
+.logoanimate img{ /*animation part*/
+	width: 70px;
+	animation: logoani 7s linear infinite;
+}
+.logoanimate{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	position: absolute;
+	bottom: -70px;
+}
+@keyframes logoani{
+	0%{
+		transform: translateY(0);
+		opacity: 0;
+	}
+	50%{
+		
+		opacity: 1;
+	}
+	70%{
+		
+		opacity: 1;
+	}
+	100%{
+		transform: translateY(-80vh);
+		opacity: 0;
+	}
+}
+.logoanimate img:nth-child(1){
+	animation-delay: 2s;
+	width: 50px;
+}
+.logoanimate img:nth-child(2){
+	animation-delay: 1s;
+}
+.logoanimate img:nth-child(3){
+	animation-delay: 3s;
+	width: 45px;
+}
+.logoanimate img:nth-child(4){
+	animation-delay: 4.5s;
+	width: 80px;
+}
+.logoanimate img:nth-child(5){
+	animation-delay: 3s;
+}
+.logoanimate img:nth-child(6){
+	animation-delay: 1s;
+	width: 55px;
+}
+.logoanimate img:nth-child(7){ /*animation ends*/
+	animation-delay: 4s;
+}
