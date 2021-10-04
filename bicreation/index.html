@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	 <title>bic.designhub</title>
+     <link rel="stylesheet" href="style.css">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+
+      <!--below is font style-->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400;600&display=swap" rel="stylesheet">
+      
+     <!--font style ends-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.js" integrity="sha256-2JRzNxMJiS0aHOJjG+liqsEOuBb6++9cY4dSOyiijX4=" crossorigin="anonymous"></script> <!--this is the "tab cak" icon from -->
+</head>
+<body onload="slider()"> 
+    <div class="banner">
+        <div class="slider">
+            <img src="images/bgmain.jpeg" id="slideImg">
+        </div>
+    </div>
+    <selection class="overlay">
+        <nav>
+            <a href="index.html"><img src="./images/logowhite.png"></a>
+            <div class="tagline">
+                <h1>DESIGN WITH PASSION</h1>
+                
+                <hr>
+            </div>
+            <div class="nav-links" id="navLinks">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="services.html">SERVICES</a></li>
+                    <li><a href="gallery.html">GALLERY</a></li>
+                    <li><a href="contact-us.html">CONTACT US</a></li>
+                </ul>
+            </div>
+        </nav>
+        
+    </selection>
+
+
+
+
+
+    
+    
+    <!--<h2>Interior Design Consultation and Renovation Company</h2>
+    <h3>All right reserved. Copyright © 2021</h3>-->
+    
+
+
+
+    <script>
+        var slideImg = document.getElementById("slideImg");
+    
+        var images = new Array(
+            "images/img-01.jpg",
+            "images/img-02.jpg",
+            "images/img-03.jpg",
+        );
+        
+        var len = images.length;
+        var i = 0;
+    
+        function slider(){
+            if(i > len-1){
+                i = 0;
+            }
+            slideImg.src = images[i];
+            i++;
+            setTimeout('slider()',3000);
+        }
+    </script>
+
+</body>
+<footer>
+    <div class="footer">
+        <div class="row">
+           
+            <div class="col">
+                 <h3>Black Ink Creation Enterprise (003224302-M)</h3>
+                 
+                <ul>
+                    <li><i class="fas fa-map-marker-alt footericon"></i><a href="">Prima Sri Gombak, 68100 Batu Caves, Selangor.</a></li>
+                    <li><i class="far fa-envelope footericon"></i><a href="mailto:bic.designhub@gmail.com?subject=Mail from bic.website">bic.designhub@gmail.com</a></li>
+                    <li><i class="fab fa-whatsapp footericon"></i><a href="https://wa.me/60132054874?text=Hi%20BI%20Creation!%20I'm%20interested%20with%20your%20services.">+60 13-2054874</a></li>
+                </ul>
+            </div>
+            <div class="col">
+                <h4>Interior Design Consultant Company</h4>
+                <h5>All right reserved. Copyright © 2021</h5>
+                <h6>Website powered by FURA Design</h6>
+            </div>
+        </div>
+   
+        
+    </div>
+    
+
+
+
+</footer>
+
+</html>
