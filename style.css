@@ -41,7 +41,7 @@ nav img{
 	position: relative;
 }
 .nav-links ul li a{
-	color:rgb(61, 60, 60); /*home | about | media FONT*/
+	color:rgb(87, 84, 84); /*home | about | media FONT*/
 	text-decoration: none;
 	font-size: 13px;
 }
@@ -127,6 +127,7 @@ nav .xicons{
 		padding: 10px;
 	}
 	.header{
+		min-height: 100vh;
 		position: absolute; /*jangan tukar if nak background nampak*/
 	}
 }
@@ -324,6 +325,10 @@ nav .xicons{
 	.intro{
 		margin-top: 50%;
 	}
+	.value-points .hero-btn{
+		padding: 9px 31px;
+	}
+	
 }
 
 
