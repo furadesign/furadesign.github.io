@@ -42,21 +42,24 @@ nav img{
 }
 @media(max-width: 700px){
     .tagline{
-        height: 50%;
-        font-size: 22px;
+        height: 80%;
+        font-size: 20px;
         text-align: center;
         margin-top: 50%;
     }
     .overlay{
         width: 100%;
+        overflow: hidden;
+        
     }
     #slideImg{
         width: 100%;
-        position: center;
+        position: absolute;
+        overflow: hidden;
     }
-    nav img{
+    /*nav img{
         width: 50%;
-    }
+    }*/
 }
 
 .nav-links{
@@ -182,11 +185,11 @@ ul li i{
         flex-flow: row wrap;
     }
     .col h3{
-        font-size: 18px;
+        font-size: 16px;
     }
     .col h4{
         text-align: left;
-        font-size: 18px;
+        font-size: 16px;
     }
     .col h5{
         text-align: left;
@@ -233,7 +236,7 @@ ul li i{
     .sub-bottom p{
         font-size: 16px;
     }
-
+    
 }
 
 /*--------- Services page ---------*/   /*--------- sub-header style ---------*/
@@ -268,12 +271,16 @@ ul li i{
 }
 @media(max-width: 700px){
     .sub-nav-links ul li{
-        left: 5px;
+        left: 4px;
         margin: auto;
+        flex-wrap: nowrap;
     }
     .sub-nav-links ul li a{
         font-size: 13px;
         display: inline-flexbox;
+    }
+    nav img{
+        width: 40%;
     }
 }
 
@@ -316,7 +323,7 @@ ul li i{
     margin-left: 60px;
     }
     .our-services-col img{
-    width: 100%;
+    width: 110%;
     }
     
 }
@@ -443,7 +450,7 @@ ul li i{
 }
 @media(max-width: 700px){
     .gallery{
-        width: 70%;
+        width: 80%;
         margin-left: 50px;
     }
     
