@@ -279,7 +279,7 @@ ul li i{
     .sub-nav-links ul li{
         left: 0px;
         margin: auto;
-        margin-top: 30%;
+        margin-top: 5%;
     }
     .sub-nav-links ul li a{
         font-size: 11px;
@@ -323,16 +323,16 @@ ul li i{
         width: 200px;
     }
     .our-services{
-    width: 90%;
-    margin: 15px;
-    padding: 2px;
+        width: 90%;
+        margin: 15px;
+        padding: 2px;
     }
     .our-services-col{
-    flex-basis: 90%;
-    margin-left: 60px;
+        flex-basis: 90%;
+        margin-left: 40px;
     }
     .our-services-col img{
-    width: 110%;
+        width: 110%;
     }
     
 }
