@@ -42,9 +42,10 @@ nav img{
 }
 @media(max-width: 700px){
     .tagline{
+        height: 50%;
         font-size: 22px;
         text-align: center;
-        margin-top: 40%;
+        margin-top: 50%;
     }
     .overlay{
         width: 100%;
@@ -54,7 +55,7 @@ nav img{
         position: center;
     }
     nav img{
-        width: 40%;
+        width: 50%;
     }
 }
 
