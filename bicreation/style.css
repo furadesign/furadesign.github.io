@@ -45,7 +45,7 @@ nav img{
         width: 100%;
     }
     .tagline{
-        height: 100%;
+        height: 130%;
         font-size: 20px;
         text-align: center;
         margin-top: 50%;
@@ -274,11 +274,11 @@ ul li i{
 }
 @media(max-width: 700px){
     .sub-nav-links ul li{
-        left: 4px;
+        left: 0px;
         margin: auto;
     }
     .sub-nav-links ul li a{
-        font-size: 13px;
+        font-size: 11px;
         display: inline-flexbox;
         flex-wrap: nowrap;
         justify-content: center;
@@ -320,8 +320,8 @@ ul li i{
     }
     .our-services{
     width: 90%;
-    margin: 20px;
-    padding: 5px;
+    margin: 15px;
+    padding: 2px;
     }
     .our-services-col{
     flex-basis: 90%;
@@ -456,11 +456,11 @@ ul li i{
 @media(max-width: 700px){
     .gallery{
         width: 80%;
-        margin-left: 50px;
+        margin-left: 40px;
     }
     
     .title{
         width: 90%;
-        margin-left: 50px;
+        margin-left: 40px;
     }
 }
