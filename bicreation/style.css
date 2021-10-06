@@ -41,8 +41,11 @@ nav img{
     text-shadow: 1.6px 1.6px 2px rgba(26, 26, 26, 0.747);
 }
 @media(max-width: 700px){
+    .slider{
+        width: 100%;
+    }
     .tagline{
-        height: 80%;
+        height: 100%;
         font-size: 20px;
         text-align: center;
         margin-top: 50%;
@@ -273,11 +276,12 @@ ul li i{
     .sub-nav-links ul li{
         left: 4px;
         margin: auto;
-        flex-wrap: nowrap;
     }
     .sub-nav-links ul li a{
         font-size: 13px;
         display: inline-flexbox;
+        flex-wrap: nowrap;
+        justify-content: center;
     }
     nav img{
         width: 40%;
@@ -317,6 +321,7 @@ ul li i{
     .our-services{
     width: 90%;
     margin: 20px;
+    padding: 5px;
     }
     .our-services-col{
     flex-basis: 90%;
