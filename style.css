@@ -339,6 +339,12 @@ nav .xicons{
 .bottomcontacts{
 	background:rgb(22, 22, 22)
 }
+.bottomcontacts img{
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
 .bottomcontacts h1{
 	width: 100%;
 	color: rgb(77, 77, 77);  
